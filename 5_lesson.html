@@ -218,34 +218,120 @@
                 }
 
                 return alert;
-
-
             
         }
 
+        if (ex==13){
+
+            var branch = (prompt("Choose your branch: " + "\n" + "1 - Science, 2 - Humanitarian subjects, 3 - Art, 4 - Sport:"));
+        
             
+        }
+
+        function ex_numero_13(){
+
+            if (branch==1) {
+            alert ("Вы выбрали Science - Науку");
+            var Science = (prompt("Choose 1 - Math, 2 - Physics:"));
+                if (Science==1){
+                alert("You are Financier")
+                 } else if (Science==2) {
+                alert ("You are Engineer")
+                 }
+            } 
+
+            if (branch==2) {
+            alert ("Вы выбрали Art - Искусство");
+            var Art = (prompt("Choose 1 - Drawing, 2 -Singing:"));
+                if (Art==1){
+                alert("You are Painter or Architect")
+                 } else if (Art==2) {
+                alert ("You are Singer or Tamada")
+                 }
+            } 
+
+            if (branch==3) {
+            alert ("Вы выбрали Humanitarian subjects - Гуманитарные предметы");
+            var HumanitarianSUB = (prompt("Choose 1 - History, 2 - Foreign Languages:"));
+                if (HumanitarianSUB==1){
+                alert("You are Historic or Diplomat  ")
+                 } else if (HumanitarianSUB==2) {
+                alert ("You are Translator")
+                 }
+            } 
+
+            if (branch==4) {
+            alert ("Вы выбрали Вы выбрали Sport - Спорт");
+            var Sport = (prompt("Choose 1 - Team, 2 - Individual:"));
+                if (Sport==1){
+                alert("You are footballer or Basketball player")
+                 } else if (Sport==2) {
+                alert ("You are boxer or tennis player")
+                 }
+            } 
+        }
 
 
+        if (ex==14){
 
+            alert("Результат упражнения: " +ex_numero_14());
+        }
+
+        function ex_numero_14(){
+            var side_a= (prompt("Insert side A of triangle"));
+            var side_b = (prompt("Insert side B of triangle"));
+            var side_c = (prompt("Insert side C of triangle"));
+   
+            if (side_a+side_b > side_c && side_b + side_c> side_a && side_a + side_c >side_b) {  // не работает ???
+                alert ("Trinagle exist");
+             } else {
+            alert("Trinagle doesn't exist");
+            }
+        }
+
+
+        if (ex==15){
+
+            var amount = prompt("Insert amount");
             
+            alert (ex_numero_15());
 
+        }
+
+        function ex_numero_15(){
+            var total = amount/380;
         
-
-
-
+            if (total%1==0) { 
+                alert ("you have  " + total + " USD")
+            } else{
+                var currency_usd  = Math.round(total);
+               
+                var cents = total %1 *100;
+                 alert ("you have  " + currency_usd + "USD and  " + cents.toFixed(0) + " cents ")   //  
+            }
+            
+        }  
         
-
-
-
-
-
-
         
-     
-      
+        if (ex==16){
 
+            var minutes = prompt("Insert minutes");
 
+            alert (ex_numero_16());
+        }
+        
+            function ex_numero_16(){
+                
+                var time = minutes/60;
 
+            if (time%1==0) { 
+                alert ("ONLY " + time + " hour(s)")
+            } else{
+                var int_hour  = Math.round(time);
+                var  decimal_minutes =  time %1 * 100;
+                alert (int_hour  + "HOURS and  "  + decimal_minutes.toFixed(0) + " minutes ")    
+            }
+        }
         
 
     </script>
