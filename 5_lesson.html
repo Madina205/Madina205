@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>5_lesson</title>
+
+</head>
+<body>
+    <script type = "text/javascript">   
+       var ex = parseInt(prompt("Insert a number"));
+
+       alert("Вы ввели номер упражнения: " + ex)
+
+        if (ex==1) {
+            alert("Результат упражнения: y = x*x + 2*x- 1 =" +ex_numero_1());
+        }
+       
+    
+         function ex_numero_1  () {
+           var x = parseInt(prompt("Insert a number"));
+            var y = x*x + 2*x- 1;
+            return  y; 
+        } 
+
+
+        if (ex==2){
+            alert("Результат упражнения: "+ex_numero_2());
+        }
+
+            function ex_numero_2(){
+                var a = parseInt(prompt("Insert a number"));
+                var b = parseInt(prompt("Insert a number"));
+                if (a%b==0) {
+                    alert ("Divisible");
+                } else {
+                    alert("Not Divisible");
+                }
+
+            }
+
+        
+        if (ex==3) {
+            var a = (prompt("Insert name"));
+            var b = (prompt("Insert surname"));
+            var c = (prompt("Insert city"));
+            var d = (prompt("Insert age"));
+        
+            alert("Результат упражнения: "+ex_numero_3());
+        }
+
+            function ex_numero_3(){
+        
+                var e = "Name:"+ a + ",  Surname:" + b + ",  City:" + c + ",  Age: " + d 
+
+                return e;
+
+            }
+
+        if (ex==4){
+                var a = parseInt(prompt("Insert a number 1"));
+                var b = parseInt(prompt("Insert a number 2"));
+                var c = parseInt(prompt("Insert a number 3")); 
+
+            alert("Результат упражнения: a + b + c = "+ex_numero_4_1()+ "\n" 
+            + "a – b – c =" + ex_numero_4_2() + "\n" 
+            + "a * b * c =" + ex_numero_4_3());
+             }
+
+            function ex_numero_4_1(){
+                return a + b + c
+            }
+            function ex_numero_4_2(){
+                return a - b - c
+            }
+            function ex_numero_4_3(){
+                return a * b * c
+            }
+
+
+        if (ex==5){
+            var a = parseInt(prompt("Insert a number 1"));
+            var b = parseInt(prompt("Insert a number 2"));
+            
+            alert("Результат упражнения: каждый ученик получит "+ex_numero_5() + "яблок");
+            }
+
+            function ex_numero_5 (){
+                var y = (b -  b%a) /a;
+                return y;
+            }
+
+        if (ex==6){
+            var a = parseInt(prompt("Insert a number 1"));
+            var b = parseInt(prompt("Insert a number 2"));
+           
+            alert("Результат упражнения: гипотенуза треугольника = "+ ex_numero_6() );
+            }
+
+            function ex_numero_6 (){
+                var c = Math.sqrt(a*a + b*b);
+                return c;
+            }
+
+        
+        if (ex==7){
+
+            alert("Результат упражнения: " +ex_numero_7());
+        }
+
+            function ex_numero_7(){
+                var speed = (prompt("Insert speed"));
+                var distance = (prompt("Insert distance"));
+                var t = distance/speed;
+                if (t<=2.25) {
+                    alert ("YES, YOU CAN REACH");
+                } else {
+                    alert("NO, YOU CAN NOT REACH");
+                }
+
+            }
+
+        if (ex==8){
+
+            alert("Результат упражнения: человек заплатит = " +ex_numero_8());
+        }
+
+        function ex_numero_8(){
+                var quantity = (prompt("Insert quantity of item"));
+                var price_item = quantity*120;
+
+                if (price_item>=4000) {
+                    alert (price_item - price_item* 0.1);
+                } else {
+                    alert(price_item);
+                }
+
+            }
+
+        if (ex==9){
+
+            alert("Результат упражнения: total in foreign currency  = " +ex_numero_9());
+        }
+
+        function ex_numero_9(){
+                var tenge = (prompt(" INSERT YOUR AMOUNT IN KZT:"));
+                var currency = (prompt(" INSERT YOUR TYPE CURRENCY:"));
+
+                if (currency == 1) {
+                    alert (tenge/380);
+                }
+                if (currency == 2) {
+                    alert (tenge/430);
+                }
+                if (currency == 3) {
+                    alert (tenge/480);
+                }
+            }
+
+
+
+        if (ex==10){
+
+            alert("Результат упражнения: " +ex_numero_10());
+        }
+
+            function ex_numero_10(){
+                var name= (prompt("Insert name"));
+                var password = (prompt("Insert password"));
+               
+                if ( name=="user" &&  password=="qwerty") {
+                 alert ("Authentication completed");
+                } else {
+                alert("Invalid login or password");
+             }
+            }
+
+        if (ex==11){
+
+            var year = (prompt("Insert year"));
+            alert ("Результат упражнения: год является високосным " +ex_numero_11());
+        }
+
+             function ex_numero_11(){
+            
+            if ( (year%4==0 && year%100!=0) || year%400==0 ) {
+             alert ("YES");
+            } else {
+             alert("NO");
+            } 
+
+
+        }
+
+        if (ex==12){
+
+            var mark = prompt("Insert your mark");
+           
+
+        }
+            function ex_numero_12(){
+                if ( 59>=mark>=50) {
+                    alert ("your mark is:  D ") 
+                }
+                if ( 74>=mark>=60) {
+                    alert ("your mark is:  C ") 
+                }
+                if ( 89>=mark>=75) {
+                    alert ("your mark is:  B ") 
+                }
+                if ( 90<=mark>=100) {
+                    alert ("your mark is:  A ") 
+                }
+                else {
+                    alert ("your mark is:  F")
+                }
+
+                return alert;
+
+
+            
+        }
+
+            
+
+
+
+            
+
+        
+
+
+
+        
+
+
+
+
+
+
+        
+     
+      
+
+
+
+        
+
+    </script>
+
+</body>
+</html>
